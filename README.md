@@ -63,3 +63,10 @@ The game is smart, but it needs its resources. Make sure your folder looks exact
 ```
 ## 👨‍💻 The Crew
 ### Brought to you by FMT Studios. Powered by C++ & SFML.
+
+---
+
+# 📜 License & Usage
+## This project is proudly created by FMT Studios.
+
+We believe in open development, so you are completely free to use, modify, and remix this game. Whether you want to learn from the code, build new features on top of it, or just mess around with the physics—go for it! The code is yours to explore.
