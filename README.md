@@ -2,7 +2,7 @@
 
 **Not just another clone. This is the arcade experience evolved.**
 
-![Game Screenshot](ss.png)
+![Game Screenshot](sample.png)
 
 ---
 
