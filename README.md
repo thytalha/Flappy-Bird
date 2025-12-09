@@ -1,7 +1,7 @@
 # 🐦 Flappy Bird: The FMT Remix
 
 **Not just another clone. This is the arcade experience evolved.**
-
+***Sample Screenshot of the game is below 👇👇***
 ![Game Screenshot](sample.png)
 
 ---
