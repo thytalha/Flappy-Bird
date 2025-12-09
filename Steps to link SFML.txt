@@ -1,0 +1,76 @@
+Steps to link SFML with Visual Studio Community 2022 / 2026
+
+1. Create a new project in VS community, make a .cpp file and at least run it for one time so its output folder is formed in the folder.
+2. In the Help section on the top menu options, click on "About Microsoft Visual Studio".
+3. Click on "Copy info" on the right side of information.
+4. Open your guru ji, THE Chatgpt, paste that info and ask which version of SFML exactly is to be installed in my laptop.
+5. Hopefully it will give the link to open the SFML download website, open the link and download that specific version of SFML.
+SFML is the library which is used to add graphics, sounds, and other stuff like that. We are going to use that library to add extraordinary features in our game👽
+6. Setup will be in .rar file, so unzip it and extract where you want.
+7. It will include a folder whose name would be like SFML-2.6.1-windows-vc17-64-bit, so rename it to just SFML.
+8. Cut/Copy that folder named SFML and paste it in C partition.
+9. Open that project in VS community, at the top menu options click on project and open your project properties.
+10. On the top, Select "all configuration" in the configuration option and select x64 in the platforms.
+11. In the left bar, expand  C/C++ and you will find a section named "General". Click on general.
+12. The first option will be "Additional Include Directories", paste the following path in front of it: 
+C:\SFML\include
+13. Click Enter and then click Apply. Expand Linker option from left bar, open General section.
+14. Paste the following in front of "Additional Library Directories":
+C:\SFML\lib
+15. Click Enter and then click on Apply.
+16. Now select "Debug" from Configuration and in the linker option, below the general, there's an option named "Input".
+17. Click on "Input", first option will be "Additional Dependencies". Click on it and move your cursor to the right side, you will find a drop down button, click on it.
+18. Click on Edit, a new interface will be shown. Paste the following in it: 
+
+sfml-graphics-d.lib
+sfml-window-d.lib
+sfml-system-d.lib
+sfml-audio-d.lib
+sfml-network-d.lib
+
+19. Click on Ok and then click on Apply and then change the configuration to "Release" and in the same option paste the following: 
+
+sfml-graphics.lib
+sfml-window.lib
+sfml-system.lib
+sfml-audio.lib
+sfml-network.lib
+
+20. Do the same i.e. Clink on Ok and Apply.
+21. Now come to the C/C++ option, you will find a section named "Language". Click on it.
+22. In that section, there's an option named "C++ Language Standard". Choose the following option: 
+ISO C++20 Standard (/std:c++20)
+23. If this option is not available then click on the following option: 
+ISO C++17 Standard (/std:c++17)
+24. Click on Apply.
+25. Now, Open the SFML folder in the C partition, there's an another folder named "bin". Open it.
+26. There will be some 10 or 11 files in it whose names end with .dll. Copy those files.
+27. Open the project folder, there will be another folder named x64, open it, open debug folder and paste those files.
+28. Now open the VS community and paste a sample code which is given below: 
+
+#include <SFML/Graphics.hpp>
+using namespace sf;
+
+int main()
+{
+    RenderWindow window(VideoMode(800, 600), "SFML Setup Test");
+    CircleShape circle(100);
+    circle.setFillColor(Color::Green);
+
+    while (window.isOpen())
+    {
+        Event event;
+        while (window.pollEvent(event))
+        {
+            if (event.type == Event::Closed)
+                window.close();
+        }
+
+        window.clear();
+        window.draw(circle);
+        window.display();
+    }
+}
+
+29. If no error is showing, run this code.
+30. A green circle should be printed, if it is printed then Congratulations to you 😭😭😭 ap ka SFML link ho gya h
