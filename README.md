@@ -2,6 +2,10 @@
 
 **Not just another clone. This is the arcade experience evolved.**
 
+![C++](https://img.shields.io/badge/Language-C++-00599C?style=for-the-badge&logo=c%2B%2B)
+![Author](https://img.shields.io/badge/Author-Talha%20Pasha-orange?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Complete-success?style=for-the-badge)
+
 ***Sample Screenshot of the game is below 👇👇***
 ![Game Screenshot](sample.png)
 
