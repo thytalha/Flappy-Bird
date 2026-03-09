@@ -202,7 +202,7 @@ void update_music_for_difficulty()
 {
     if (difficulty_level == EASY) 
     {
-        if (bg_music.openFromFile("assets/music_easy.mp3")) 
+        if (bg_music.openFromFile("assets/music.mp3")) 
         {
             bg_music.setLoop(true);
             if (music_on && game_started) bg_music.play();
@@ -210,7 +210,7 @@ void update_music_for_difficulty()
     }
     else 
     {
-        if (bg_music.openFromFile("assets/music_hard.mp3")) 
+        if (bg_music.openFromFile("assets/music.mp3")) 
         {
             bg_music.setLoop(true);
             if (music_on && game_started) bg_music.play();
